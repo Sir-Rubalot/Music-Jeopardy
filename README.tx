@@ -1,0 +1,29 @@
+Jag har valt att göra ett musikquiz a la jeopardystil med frågor i fem olika kategorier och stigande 
+svårighetsgrader. Jag har valt filmmusik, hiphop, rock, gamla låtar och nittiotalslåtar. 
+För frågorna ger det lättaste frågan 200 poäng och sedan stigande till 1000 poäng för de svåraste frågorna, 
+där knapparna (frågorna) är tilldelade poäng i if-satser i MyButtons-klassen. 
+Man börjar med att skriva in spelarnas (2 spelare) namn i terminalen och sedan ploppar spelet upp. Därefter
+väljer man en fråga och en ny ruta öppnas med svaret och ett fält där man skriver in sin fråga i svarsfältet. 
+När man sedan trycker på "submit"-knappen kontrollerar programmet om svaret stämmer och ger poäng därefter, 
+eller drar av poäng om man svarar fel. Skulle man svara fel går turen över till nästa spelare tills 
+denna svarar fel, så det gäller att man kan sin musik om man vill vinna. När alla frågor är besvarade räknar 
+programmet igenom totalpoängen för spelarna och skriver ut vinnaren i terminalen. 
+
+Jag har gjort mycket i Java Swing där jag använder bl. a. Swing, Scanner, JFrame, JPanel, JButton, JLabel, 
+JTextfield, Dimension, Color, ActionEvent och ActionListener. 
+Detta är för att göra ett snyggt gränssnitt förprogrammet. 
+Jag har radat upp knapparna med GridLayout där jag gjort lite mellanrum mellan 
+varje knapp och lagt in en bakgrundfärg med java.AWT.color. 
+
+Kategorierna är gjorda i enskilda klasser där både frågorna och svaren matchar varandra och hämtas 
+enkelt i switcharna i MyButtons. 
+Första Frame'n är upplagt med 30 knappar där de första fem knapparna inte fyller någon funktion mer än 
+namnet de innehåller för att sätta upp kategorierna. De andra tjugofem knapparna har blivit tilldelade rätt
+poäng enligt frågetabellen och en ActionListener som öppnar upp en ny Frame med frågorna. 
+
+Jag har gjort ganska många ändringar/iterationer av detta program, inte minst med knapparna, eller hur de ska vara
+upplagda, först hade jag en Layout med alla knappar, men då märkte jag att det blev svårt att tilldela dem olika 
+funktioner. Jag la då upp varje knapp för sig och la in dem i en JLabel där jag enkelt kunde organisera dem. 
+Jag tycker överlag det har gått bra, mycket nytt för mig vilket har varit en utmaning men det är väl tanken. 
+Vad kunde gått bättre? Mycket kunde gått bättre, men jag har lärt mig med tiden och tycker att programmet som 
+jag vill att det ska fungera är ganska smidigt nu. Man kan säkert finlira ännu mer längre fram när jag lärt mig mer. 
